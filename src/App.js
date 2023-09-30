@@ -42,7 +42,7 @@ function App() {
      <nav ref={navRef}>
         <ul >
             <li ><a  href="#home" onClick={showNavbar}><i class="fa-solid fa-house"></i></a></li>
-            <li ><a  href="#about" onClick={showNavbar}><i class="fa-solid fa-info"></i></a></li>
+            <li ><a  href="#about" onClick={showNavbar}>About</a></li>
             <li><a href="#cards"  onClick={() => { filterItem("Buy"); trueBuyOption(); }}>Buy</a></li>
             <li><a href="#cards"  onClick={() => filterItem("Abstract")}>Abstract</a></li>
             <li><a href="#cards" onClick={() => filterItem("Landscape")}>Landscape</a></li>
