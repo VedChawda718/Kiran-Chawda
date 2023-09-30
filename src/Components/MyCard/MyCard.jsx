@@ -65,6 +65,21 @@ const MyCard = (props) => {
        </div>
    </div>
 </div>
+<div className="mycard-wrapper" >
+        <div className="mycard-container" >
+            <div className="img-box">
+                <img className='img-big' src={Big7} alt="" />
+                <img className='img-small'src={Small7} alt="" />
+            </div>
+            <div className="event-title">
+                <h3><span>2008</span></h3>
+                <h1>Gifted The Sketch To Master</h1>
+            </div>
+            <div className="event-details">
+                <p>Gifted the sketch of <b>Babuji Maharaj</b> to Master through Jimit Thakkar</p>
+            </div>
+        </div>
+    </div>
     <div className="mycard-wrapper" >
         <div className="mycard-container" >
             <div className="img-box">
@@ -110,21 +125,7 @@ const MyCard = (props) => {
             </div>
         </div>
     </div>
-    <div className="mycard-wrapper" >
-        <div className="mycard-container" >
-            <div className="img-box">
-                <img className='img-big' src={Big7} alt="" />
-                <img className='img-small'src={Small7} alt="" />
-            </div>
-            <div className="event-title">
-                <h3><span>2022</span></h3>
-                <h1>Gifted The Sketch To Master</h1>
-            </div>
-            <div className="event-details">
-                <p>Gifted the sketch of <b>Babuji Maharaj</b> to Master through Jimit Thakkar</p>
-            </div>
-        </div>
-    </div>
+
     
     </>
   )
