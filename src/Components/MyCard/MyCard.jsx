@@ -10,7 +10,10 @@ import Small4 from "../../assets/images1/S-IMG4.jpg"
 import Big4 from "../../assets/images1/B-IMG4.png"
 import Small5 from "../../assets/images1/S-IMG5.jpg"
 import Big5 from "../../assets/images1/B-IMG5.jpg"
-
+import Small6 from "../../assets/images1/S-IMG6.jpg"
+import Big6 from "../../assets/images1/B-IMG6.jpg"
+import Small7 from "../../assets/images1/S-IMG7.jpg"
+import Big7 from "../../assets/images1/B-IMG7.jpg"
 
 const MyCard = (props) => {
    
@@ -78,7 +81,6 @@ const MyCard = (props) => {
         </div>
     </div>
     <div className="mycard-wrapper" >
-    
         <div className="mycard-container" >
             <div className="img-box">
                 <img className='img-big' src={Big3} alt="" />
@@ -90,6 +92,36 @@ const MyCard = (props) => {
             </div>
             <div className="event-details">
                 <p> Live demonstration sponsored by <b>Camlin.</b></p>
+            </div>
+        </div>
+    </div>
+    <div className="mycard-wrapper" >
+        <div className="mycard-container" >
+            <div className="img-box">
+                <img className='img-big' src={Big6} alt="" />
+                <img className='img-small'src={Small6} alt="" />
+            </div>
+            <div className="event-title">
+                <h3><span>2022</span></h3>
+                <h1>Made Amblem in Stained-Glass at Kanha Shanti Vanam</h1>
+            </div>
+            <div className="event-details">
+                <p>It took 22 days to build the huge Amblem of 6 feet diameter, <b>Leaded Stained-Glass</b> at <b>Kanha Shanti Vanam</b>, Hyderabad.</p>
+            </div>
+        </div>
+    </div>
+    <div className="mycard-wrapper" >
+        <div className="mycard-container" >
+            <div className="img-box">
+                <img className='img-big' src={Big7} alt="" />
+                <img className='img-small'src={Small7} alt="" />
+            </div>
+            <div className="event-title">
+                <h3><span>2022</span></h3>
+                <h1>Gifted The Sketch To Master</h1>
+            </div>
+            <div className="event-details">
+                <p>Gifted the sketch of <b>Babuji Maharaj</b> to Master through Jimit Thakkar</p>
             </div>
         </div>
     </div>
