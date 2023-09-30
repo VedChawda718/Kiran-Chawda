@@ -28,27 +28,9 @@ const Footer = () => {
         <li><a href="https://www.instagram.com/kiranchawda_paintings/#"><i class="fa-brands fa-instagram"></i></a></li>
         <hr />
     </ul>
-    <p>&copy; 2023. All Rights Reserved.</p>
+    <p>&copy; 2023. Designed by <a href="https://www.instagram.com/vedchawda.718/"><b>Ved Chawda</b></a></p>
     </div>
     </div>
-    {/* <h1>. . .Contact. . .</h1>
-    <ul className='footer-container'>
-        
-        <li><a href="https://www.facebook.com/kiran.chawda.75?mibextid=nW3QTL"><i class="fa-brands fa-facebook"></i></a></li>
-        <li><a href="mailto:kiranbhai.chawda@gmail.com"><i class="fa-solid fa-at"></i></a></li>
-        <li><a href="https://www.instagram.com/kiranchawda_paintings/#"><i class="fa-brands fa-instagram"></i></a></li>
-    </ul>
-  <br />
-  <hr  />
-  <br />
-    <h1>. . .Also Visit. . .</h1>
-    <ul className='footer-container2'>
-        
-        <li><a href="http://kiranchawdapaintings.blogspot.com/search?updated-max=2018-01-19T09:15:00-08:00&max-results=7&start=21&by-date=false&m=1">KiranChawda.BlogSpot.com</a></li>
-        <li><a href="https://www.artwanted.com/kiranchawda/profile/">KiranChawda.ArtWanted.com</a></li>
-    </ul>
-  <hr  />
-  <br /> */}
     </>
   )
 }

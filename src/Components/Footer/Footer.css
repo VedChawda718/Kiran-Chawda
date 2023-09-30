@@ -96,6 +96,11 @@
     font-size: 13px;
    
 }
+.footer-container2 p a{
+    color: white;
+    text-decoration: none;
+    font-style: bold;
+}
 .responsive-hr{
     width: 120px;
     margin: 8px;
