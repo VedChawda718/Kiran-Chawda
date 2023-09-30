@@ -1,0 +1,48 @@
+.product-carousel{
+    position: relative;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+.product-container{
+  padding: 0 10px;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.pre-btn {
+    border: none;
+    width: 60px;
+    height: 50%;
+    position: absolute;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.next-btn{
+    right: 0;
+    border: none;
+    width: 60px;
+    height: 50%;
+    position: absolute;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.next-btn:hover{
+    color: gray;
+    cursor: pointer;
+}
+.pre-btn:hover{
+    color: gray;
+}
+.pre-btn i, 
+.next-btn i{
+    font-size: 50px;
+}
+
+
+

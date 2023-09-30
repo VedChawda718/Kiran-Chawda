@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,100&display=swap');
+
+*{
+  
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    
+}
+.main-container{
+  background: white;   
+  background-size: contain;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr{
+  width: 80%;
+  margin: auto;
+  opacity: 0.5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header ul{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+header ul li a{
+  text-decoration: none;
+  padding: 40px;
+  padding-bottom: 20px;
+  color: black;
+  font-size: 16px;
+  font-weight: 450;
+  border-bottom: 2px solid white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header ul li a:hover{
+  color: rgb(108, 108, 108);
+  border-bottom: 2px solid rgb(108, 108, 108);
+  padding-bottom: 20px;
+  transition: .1s;
+}
+
+header .nav-btn{
+  visibility: hidden;
+}
+header .nav-btn1{
+  visibility: hidden;
+}
+
+nav{
+  background: white; 
+  width: 100%;
+  opacity: 0.9;
+  position: fixed;
+  top: 0; /* Stick the navbar to the top of the viewport */
+  z-index: 100;
+}
+
+
+/* ==================SMALL DEVICES================= */
+@media screen and (max-width: 600px){
+
+  header ul{
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  header .nav-btn1{
+    visibility: visible;
+    background:transparent;
+    border: none;
+    padding-top: 15px;
+    font-size: 30px;
+    padding-left: 20px;
+    position: fixed;
+    
   }
+  header ul button{
+    padding-bottom: 0px;
+  }
+  header ul button i{
+    font-size: 30px;
+  }
+  header ul .nav-btn{
+    visibility: visible;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    width: 30px;
+  }
+
+  header nav{
+    opacity: 0.95;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+  header .responsive-nav{
+    transform: none;
+  }
+  header ul{
+    text-align: center;
+  }
+  header li {
+    padding: 10px;
+  }
+  header ul li a{
+    padding: 0;
+    font-size: 20px;
+    font-weight: 2500;
+  }
+  header ul li a:hover{
+    border: none;
+  }
+
 }
