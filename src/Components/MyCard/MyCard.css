@@ -50,3 +50,57 @@
     font-size: 13px;
     
 }
+
+/* ==================SMALL DEVICES================= */
+@media screen and (max-width: 600px){
+    .mycard-wrapper {
+      padding: 0;
+      margin-right: 5px;
+      margin-left: 5px;
+      min-width: 350px;
+    }
+    .mycard-container {
+      width: 350px;
+      height: 625px;
+      padding: 0;
+      padding-top: 20px;
+      margin: 0 auto; /* Center the container horizontally */
+      text-align: center; /* Center text horizontally */
+      border-radius: 20px;
+    }
+    .img-big {
+      margin: 5px auto; /* Center the image horizontally */
+      height: 220px;
+      width: 300px;
+      display: block; /* Ensure it takes full width available */
+      border-radius: 10px;
+    }
+    .img-small {
+      margin: 5px auto; /* Center the image horizontally */
+      height: 200px;
+      width: 180px;
+      display: block; /* Ensure it takes full width available */
+      border-radius: 10px;
+    }
+    .event-title h1 {
+      padding: 0 10px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .event-title h3 {
+      padding: 12px;
+      margin: 0;
+      font-size: 8px;
+    }
+    .event-details p {
+      padding: 10px;
+      margin: 0;
+      font-size: 10px;
+    }
+    .img-box {
+      padding: 0px;
+      margin: 0;
+      flex-direction: column;
+    }
+  }
+  

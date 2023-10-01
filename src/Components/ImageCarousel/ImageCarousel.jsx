@@ -24,6 +24,8 @@ const ImageCarousel = () => {
 
     return (
         <div  className="product-carousel">
+            <h3 >&lt;------ Scroll ------&gt; </h3>
+            <br />
             <button className='pre-btn' onClick={btnpressPrev}><i className="fa-solid fa-chevron-left"></i></button>
             <button className='next-btn' onClick={btnpressNext}><i className="fa-solid fa-chevron-right"></i></button>
 

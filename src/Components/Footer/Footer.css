@@ -101,6 +101,11 @@
     text-decoration: none;
     font-style: bold;
 }
+.footer-container2 p a:hover{
+    font-size: 13.5px;
+    transition: 0.2s;
+    color: gray;
+}
 .responsive-hr{
     width: 120px;
     margin: 8px;

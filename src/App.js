@@ -63,9 +63,9 @@ function App() {
   <Home />
   <br />
   <br />
-  <br id='about' />
+  <br  />
   <hr  />
-  <br />
+  <br id='about' />
   <br />
   <br />
   <ImageCarousel/>
