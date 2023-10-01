@@ -61,7 +61,7 @@
     }
     .mycard-container {
       width: 350px;
-      height: 625px;
+      height: 600px;
       padding: 0;
       padding-top: 20px;
       margin: 0 auto; /* Center the container horizontally */
@@ -85,7 +85,7 @@
     .event-title h1 {
       padding: 0 10px;
       margin: 0;
-      font-size: 15px;
+      font-size: 11px;
     }
     .event-title h3 {
       padding: 12px;
@@ -95,7 +95,7 @@
     .event-details p {
       padding: 10px;
       margin: 0;
-      font-size: 10px;
+      font-size: 8px;
     }
     .img-box {
       padding: 0px;
