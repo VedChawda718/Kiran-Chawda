@@ -65,7 +65,7 @@ function App() {
   <br />
   <br  />
   <hr  />
-  <br id='about' />
+  <br  />
   <br />
   <br />
   <ImageCarousel/>
