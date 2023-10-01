@@ -21,7 +21,7 @@ hr{
 
 header ul{
   display: flex;
-  justify-content: center;
+  justify-content: right;
   list-style: none;
   padding: 20px;
 }
@@ -42,18 +42,36 @@ header ul li a:hover{
   padding-bottom: 20px;
   transition: .1s;
 }
+.active{
+  display: none;
+}
 
 header .nav-btn{
   visibility: hidden;
 }
 header .nav-btn1{
   visibility: hidden;
+  z-index: 3000;
+}
+header .nav-btn1 i{
+  background-color: black;
+  color: white;
+  padding: 18px 20px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+header .nav-btn i{
+  background-color: black;
+  color: white;
+  padding: 18px 20px;
+  border-radius: 50px;
+  font-size: 20px;
 }
 
 nav{
   background: white; 
   width: 100%;
-  opacity: 0.9;
+  /* opacity: 0.9; */
   position: fixed;
   top: 0; /* Stick the navbar to the top of the viewport */
   z-index: 100;

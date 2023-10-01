@@ -70,7 +70,9 @@
       }   
       .pre-btn i, 
       .next-btn i{
-        font-size: 25px;
+        font-size: 20px;
+        padding: 15px 18px;
+        border-radius: 60px;
         background-color: black;
         color: white;
         opacity: 0.55;

@@ -9,6 +9,7 @@ import ImageCarousel from "./Components/ImageCarousel/ImageCarousel";
 
 function App() {
   const [menuData, setMenuData] = useState(Api);
+  const [showHamburger, setShowHamburger] = useState(true)
   const [showBuyOption, setShowBuyOption] = useState(false); 
 
   const filterItem = (category) => {
@@ -50,12 +51,18 @@ function App() {
             <li><a href="#cards" onClick={() => filterItem("Sketches")}>Sketches</a></li>
             <li><a href="#cards" onClick={() => {setMenuData(Api); showNavbar(); falseBuyOption();}}>All</a></li>
             <li ><a  href="#contact" onClick={showNavbar}><i class="fa-solid fa-link"></i></a></li>
-            <button  className="nav-btn nav-close-btn" onClick={showNavbar}><i class="fa-solid fa-angles-up"></i></button>
+            <button className="nav-btn nav-close-btn" onClick={() => {
+              showNavbar()
+              setShowHamburger(true)
+            }}><i class="fa-solid fa-angles-up"></i></button>
 
         </ul>
     </nav>
 
-    <button className="nav-btn1" onClick={showNavbar}><i class="fa-solid fa-bars"></i></button>
+    <button className={`${showHamburger ? 'nav-btn1' : 'active'}`} onClick={() => {
+      showNavbar()
+      setShowHamburger(false)
+      }}><i class="fa-solid fa-bars"></i></button>
     </header>
   <br />
   <br />
