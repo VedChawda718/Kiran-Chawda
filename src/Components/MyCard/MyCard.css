@@ -3,9 +3,10 @@
 }
 .mycard-container{
     padding: 50px;
-    background-color: rgb(249, 247, 247);
+    background-color: #f9f7f7;
     margin-left: 300px;
     margin-right: 300px;
+    border-radius: 50px;
 }
 .img-box{
     display: flex;
@@ -54,14 +55,14 @@
 /* ==================SMALL DEVICES================= */
 @media screen and (max-width: 600px){
     .mycard-wrapper {
-      padding: 0;
-      margin-right: 5px;
-      margin-left: 5px;
-      min-width: 350px;
+      padding: 30px;
+      margin-right: 0;
+      margin-left: 0;
+      min-width: 300px;
     }
     .mycard-container {
-      width: 350px;
-      height: 600px;
+      width: 300px;
+      height: 570px;
       padding: 0;
       padding-top: 20px;
       margin: 0 auto; /* Center the container horizontally */
@@ -70,17 +71,17 @@
     }
     .img-big {
       margin: 5px auto; /* Center the image horizontally */
-      height: 220px;
-      width: 300px;
+      height: 180px;
+      width: 250px;
       display: block; /* Ensure it takes full width available */
-      border-radius: 10px;
+     
     }
     .img-small {
       margin: 5px auto; /* Center the image horizontally */
       height: 200px;
-      width: 180px;
+      width: 150px;
       display: block; /* Ensure it takes full width available */
-      border-radius: 10px;
+     padding-bottom: 10px;
     }
     .event-title h1 {
       padding: 0 10px;
