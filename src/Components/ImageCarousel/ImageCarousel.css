@@ -57,6 +57,13 @@
     
   }
   
+  .custom-dot-list-style li {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  
+  
   /* ==================SMALL DEVICES================= */
   @media screen and (max-width: 600px){
     .mycard-wrapper {

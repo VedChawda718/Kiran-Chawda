@@ -56,7 +56,7 @@ const ImageCarousel = () => {
   
 
     return (
-        <Carousel responsive={responsive}  renderButtonGroupOutside={true} showDots={true}  autoPlay={true} autoPlaySpeed={10000}  keyBoardControl={true} dotListClass="custom-dot-list-style"   infinite={true} containerClass="carousel-container" itemClass="carousel-item-padding-40-px"  >
+        <Carousel responsive={responsive}  renderButtonGroupOutside={true} showDots={true}  autoPlay={true} autoPlaySpeed={10000}  keyBoardControl={true} dotListClass="custom-dot-list-style "   infinite={true} containerClass="carousel-container" itemClass="carousel-item-padding-40-px"  >
            <div className="mycard-wrapper" >
         <div className="mycard-container" >
             <div className="img-box">
