@@ -50,7 +50,7 @@ function App() {
             <li><a href="#cards" onClick={() => {filterItem("Landscape") ; setShowHamburger(true)}}>Landscape</a></li>
             <li><a href="#cards" onClick={() =>{filterItem("Stained Glass") ; setShowHamburger(true)}}>Stained Glass</a></li>
             <li><a href="#cards" onClick={() => {filterItem("Sketches") ; setShowHamburger(true)}}>Sketches</a></li>
-            <li><a href="#cards" onClick={() => {setMenuData(Api); showNavbar(); falseBuyOption();setShowHamburger(false) }}>All</a></li>
+            <li><a href="#cards" onClick={() => {setMenuData(Api); showNavbar(); falseBuyOption();setShowHamburger(true) }}>All</a></li>
             <li ><a  href="#contact" onClick={showNavbar}><i class="fa-solid fa-link"></i></a></li>
             <button className="nav-btn nav-close-btn" onClick={() => {
               showNavbar()

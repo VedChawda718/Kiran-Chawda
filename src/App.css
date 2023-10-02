@@ -95,6 +95,12 @@ nav{
     position: fixed;
     
   }
+  header .nav-btn1 i:hover{
+    background: gray;
+  }
+  header .nav-btn i:hover{
+    background: gray;
+  }
   header ul button{
     padding-bottom: 0px;
   }
