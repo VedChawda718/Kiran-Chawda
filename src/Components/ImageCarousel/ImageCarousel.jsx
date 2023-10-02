@@ -2,6 +2,7 @@ import React from 'react';
 import "./ImageCarousel.css"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+
 import Small from "../../assets/images1/S-IMG1.jpg"
 import Big from "../../assets/images1/B-IMG1.jpg"
 import Small2 from "../../assets/images1/S-IMG2.jpg"
@@ -55,7 +56,7 @@ const ImageCarousel = () => {
   
 
     return (
-        <Carousel responsive={responsive} showDots={true}  autoPlay={true} autoPlaySpeed={15000}  keyBoardControl={true} dotListClass="custom-dot-list-style"   infinite={true} containerClass="carousel-container" itemClass="carousel-item-padding-40-px"  >
+        <Carousel responsive={responsive} renderButtonGroupOutside={true} showDots={true}  autoPlay={true} autoPlaySpeed={10000}  keyBoardControl={true} dotListClass="custom-dot-list-style"   infinite={true} containerClass="carousel-container" itemClass="carousel-item-padding-40-px"  >
            <div className="mycard-wrapper" >
         <div className="mycard-container" >
             <div className="img-box">
@@ -105,11 +106,11 @@ const ImageCarousel = () => {
 <div className="mycard-wrapper" >
         <div className="mycard-container" >
             <div className="img-box">
-            <Carousel responsive={responsive}x autoPlay={true} autoPlaySpeed={1650}  keyBoardControl={true} dotListClass="custom-dot-list-style"   infinite={true}  itemClass="carousel-item-padding-40-px"   >
+            <Carousel responsive={responsive}x autoPlay={true} autoPlaySpeed={1650}  keyBoardControl={true} dotListClass="custom-dot-list-style"   infinite={true}     >
                 <img className='img-big' src={Big7} alt="" />
                 <img className='img-big' src={Big7a} alt="" />
                 <img className='img-big' src={Big7b} alt="" />
-                </Carousel>
+            </Carousel>
                 <img className='img-small'src={Small7} alt="" />
             </div>
             <div className="event-title">
@@ -124,7 +125,7 @@ const ImageCarousel = () => {
     <div className="mycard-wrapper" >
         <div className="mycard-container" >
             <div className="img-box">
-            <Carousel responsive={responsive}x autoPlay={true} autoPlaySpeed={1650}  keyBoardControl={true} dotListClass="custom-dot-list-style"   infinite={true} containerClass="carousel-container" itemClass="carousel-item-padding-40-px"   >
+            <Carousel responsive={responsive}x autoPlay={true} autoPlaySpeed={1650}  keyBoardControl={true} dotListClass="custom-dot-list-style"   infinite={true}   >
                 <img className='img-big' src={Big5} alt="" />
                 <img className='img-big' src={Big5c} alt="" />
                 <img className='img-big' src={Big5b} alt="" />
@@ -145,7 +146,7 @@ const ImageCarousel = () => {
     <div className="mycard-wrapper" >
         <div className="mycard-container" >
             <div className="img-box">
-            <Carousel responsive={responsive}x autoPlay={true} autoPlaySpeed={1650}  keyBoardControl={true} dotListClass="custom-dot-list-style"   infinite={true} containerClass="carousel-container" itemClass="carousel-item-padding-40-px"   >
+            <Carousel responsive={responsive}x autoPlay={true} autoPlaySpeed={1650}  keyBoardControl={true} dotListClass="custom-dot-list-style"   infinite={true}   >
                 <img className='img-big' src={Big3} alt="" />
                 <img className='img-big' src={Big3a} alt="" />
                 <img className='img-big' src={Big3b} alt="" />
@@ -165,12 +166,14 @@ const ImageCarousel = () => {
     </div>
     <div className="mycard-wrapper" >
         <div className="mycard-container" >
-        <Carousel responsive={responsive}x autoPlay={true} autoPlaySpeed={1650}  keyBoardControl={true} dotListClass="custom-dot-list-style"   infinite={true}  itemClass="carousel-item-padding-40-px"   >
+        <div className="img-box">
+        <Carousel responsive={responsive}x autoPlay={true} autoPlaySpeed={1650}  keyBoardControl={true} dotListClass="custom-dot-list-style"   infinite={true}   >
                 <img className='img-big' src={Big6} alt="" />
                 <img className='img-big' src={Big6a} alt="" />
                 <img className='img-big' src={Big6b} alt="" />
                 </Carousel>
                 <img  className='img-small'src={Small6} alt="" />
+                </div>
             <div className="event-title">
                 <h3><span>2022</span></h3>
                 <h1>Made Amblem in Stained-Glass at Kanha Shanti Vanam</h1>

@@ -7,20 +7,25 @@
     margin-left: 300px;
     margin-right: 300px;
     border-radius: 50px;
+    
   }
   .img-box{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto; /* Two columns with equal width */
+    grid-gap: 5px; /* Add some spacing between the images */
   }
+
   .img-big{
     height: 350px;
-    width: 550px;
+    width: 480px;
     margin: 10px;
+
   }
   .img-small{
     height: 350px;
     width: 300px;
     margin: 10px;
+
   }
   .event-title h1{
     margin: 10px;
@@ -101,6 +106,7 @@
     .img-box {
       padding: 0px;
       margin: 0;
+      display: flex;
       flex-direction: column;
     }
   }
