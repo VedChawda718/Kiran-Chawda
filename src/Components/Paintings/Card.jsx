@@ -21,7 +21,7 @@ const Card = ({ props, showBuyOption }) => {
         {showBuyOption && ( // Conditionally render price and buy option
                 <>
                   <p>Price: {currElem.price}</p>
-                  <button><i class="fa-solid fa-bag-shopping"></i>Order</button>
+                  <button>Order</button>
                 </>
               )}
           </div>

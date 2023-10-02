@@ -33,6 +33,7 @@ function App() {
 
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive-nav")
+    setShowHamburger(true);
   }
   return (
 
@@ -45,11 +46,11 @@ function App() {
             <li ><a  href="#home" onClick={showNavbar}><i class="fa-solid fa-house"></i></a></li>
             <li ><a  href="#about" onClick={showNavbar}>About</a></li>
             <li><a href="#cards"  onClick={() => { filterItem("Buy"); trueBuyOption(); }}>Buy</a></li>
-            <li><a href="#cards"  onClick={() => filterItem("Abstract")}>Abstract</a></li>
-            <li><a href="#cards" onClick={() => filterItem("Landscape")}>Landscape</a></li>
-            <li><a href="#cards" onClick={() => filterItem("Stained Glass")}>Stained Glass</a></li>
-            <li><a href="#cards" onClick={() => filterItem("Sketches")}>Sketches</a></li>
-            <li><a href="#cards" onClick={() => {setMenuData(Api); showNavbar(); falseBuyOption();}}>All</a></li>
+            <li><a href="#cards"  onClick={() => {filterItem("Abstract") ; setShowHamburger(true)}}>Abstract</a></li>
+            <li><a href="#cards" onClick={() => {filterItem("Landscape") ; setShowHamburger(true)}}>Landscape</a></li>
+            <li><a href="#cards" onClick={() =>{filterItem("Stained Glass") ; setShowHamburger(true)}}>Stained Glass</a></li>
+            <li><a href="#cards" onClick={() => {filterItem("Sketches") ; setShowHamburger(true)}}>Sketches</a></li>
+            <li><a href="#cards" onClick={() => {setMenuData(Api); showNavbar(); falseBuyOption();setShowHamburger(false) }}>All</a></li>
             <li ><a  href="#contact" onClick={showNavbar}><i class="fa-solid fa-link"></i></a></li>
             <button className="nav-btn nav-close-btn" onClick={() => {
               showNavbar()

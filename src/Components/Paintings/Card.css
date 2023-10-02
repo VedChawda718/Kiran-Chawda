@@ -104,49 +104,52 @@
 }
 
 /* ==================SMALL DEVICES================= */
-@media screen and (max-width: 600px){
+@media screen and (max-width:600px) 
+{
     .cardWrapper{
-        /* margin: 20px; */
-        /* padding: 35px; */
-        /* padding-top: 40px;
-        padding-bottom: 40px;
-        border-radius: 0px 0px 80px 80px; */
+        padding: 20px 0;
+        margin: 0; 
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
     }
     .card-container{
-        width: 200px;
-        height: 430px;
-        border-radius: 50px;
+        padding: 0px;
+        margin: 0;
+        /* border: 1px solid black; */
+        height: 200px;
+        width: 120px;
     }
-    .img-container{
-        flex-direction: column;
-        height: 380px;
-       
+    .img-container h2{
+        padding: 0;
+        margin: 0;
+        /* border: 1px solid black; */
+        font-size: 8px;
+    }
+    .card-container hr{
+        display: none;
     }
     .img-container img{
-        height: 310px;
-        width: 250px;
+        padding: 0;
+        margin: 0;
+        height: 120px;
+        width: 100px;
+    }
+    .card-container br{
+        display: none;
     }
 
-    .img-container h2{
-        font-size: 20px;
-        margin-top: 12px;
-    }
-
-    .img-details p{
-        padding-top: 10px;
-        padding-bottom: 5px;
+    .my-work-title{
+        font-size: 35px;
+        margin-bottom: 40px;
     }
     .img-details button{
-        font-size: 15px;
-        padding: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
+        font-size: 8px;
+        padding: 10px 20px;
     }
-    .my-work-title{
-        font-size: 30px;
+    .img-details p{
+        font-size: 8px;
     }
-    .title hr{
-        width: 20%;
-    }
-
+    
 }
