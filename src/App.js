@@ -7,6 +7,7 @@ import Home from "./Components/Home/Home"
 import Footer from "./Components/Footer/Footer"
 import ImageCarousel from "./Components/ImageCarousel/ImageCarousel";
 
+
 function App() {
   const [menuData, setMenuData] = useState(Api);
   const [showHamburger, setShowHamburger] = useState(true)
@@ -75,7 +76,7 @@ function App() {
   <hr  />
   <br  />
   <br />
-  <br />
+  <br id="about" />
   <ImageCarousel/>
   <br />
   <br />

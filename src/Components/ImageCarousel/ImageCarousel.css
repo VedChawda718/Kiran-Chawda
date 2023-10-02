@@ -1,85 +1,106 @@
-.product-carousel{
-    position: relative;
-    scroll-behavior: smooth;
-    overflow: hidden;
-    text-align: center;
-}
-.product-carousel h3{
-    font-family: 'Poppins';
-    font-size: 30px;
+.mycard-wrapper{
+    min-width: 1510px;
+  }
+  .mycard-container{
+    padding: 50px;
+    background-color: #f9f7f7;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 50px;
+  }
+  .img-box{
+    display: flex;
+    justify-content: center;
+  }
+  .img-big{
+    height: 350px;
+    width: 550px;
+    margin: 10px;
+  }
+  .img-small{
+    height: 350px;
+    width: 300px;
+    margin: 10px;
+  }
+  .event-title h1{
+    margin: 10px;
+    margin-top:13px ;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+  
+  }
+  .event-title span{
+    /* margin-left: 10px; */
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .event-title h3{
+    margin: 18px;
     font-weight: 100;
-}
-.product-container{
-  padding: 0 10px;
-  display: flex;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  margin: 0;
-}
-.pre-btn {
-    border: none;
-    width: 60px;
-    height: 50%;
-    position: absolute;
-    background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin: 0 10px;
-}
-.next-btn{
-    right: 0;
-    border: none;
-    width: 60px;
-    height: 50%;
-    position: absolute;
-    background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin: 0 10px;
-}
-.next-btn:hover{
-    cursor: pointer;
-}
-.pre-btn:hover{
-    cursor: pointer;
-}
-.pre-btn i, 
-.next-btn i{
-    font-size: 50px;
-    backdrop-filter:blur(2px) ;
-    padding: 20px 25px;
-    border-radius: 60px;
-}
-
-/* ==================SMALL DEVICES================= */
-@media screen and (max-width: 600px){
-    .product-carousel{
-        padding: 0;
-        margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+  }
+  .event-details p{
+    margin: 10px;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    
+  }
+  
+  /* ==================SMALL DEVICES================= */
+  @media screen and (max-width: 600px){
+    .mycard-wrapper {
+      padding: 30px;
+      margin-right: 0;
+      margin-left: 0;
+      min-width: 300px;
     }
-    .product-container{
-        margin-left: 0;
-        margin-right: 0;
-        margin: 0;
-        padding-left: 0;
-        padding-right: 0;
-      }   
-      .pre-btn i, 
-      .next-btn i{
-        font-size: 20px;
-        padding: 15px 18px;
-        border-radius: 60px;
-        background-color: black;
-        color: white;
-        opacity: 0.55;
-      }
-      .product-carousel h3{
-      
-        font-size: 18px;
+    .mycard-container {
+      width: 300px;
+      height: 570px;
+      padding: 0;
+      padding-top: 20px;
+      margin: 0 auto; /* Center the container horizontally */
+      text-align: center; /* Center text horizontally */
+      border-radius: 20px;
     }
-}
-
+    .img-big {
+      margin: 5px auto; /* Center the image horizontally */
+      height: 180px;
+      width: 250px;
+      display: block; /* Ensure it takes full width available */
+     
+    }
+    .img-small {
+      margin: 5px auto; /* Center the image horizontally */
+      height: 200px;
+      width: 150px;
+      display: block; /* Ensure it takes full width available */
+     padding-bottom: 10px;
+    }
+    .event-title h1 {
+      padding: 0 10px;
+      margin: 0;
+      font-size: 11px;
+    }
+    .event-title h3 {
+      padding: 12px;
+      margin: 0;
+      font-size: 8px;
+    }
+    .event-details p {
+      padding: 10px;
+      margin: 0;
+      font-size: 8px;
+    }
+    .img-box {
+      padding: 0px;
+      margin: 0;
+      flex-direction: column;
+    }
+  }
