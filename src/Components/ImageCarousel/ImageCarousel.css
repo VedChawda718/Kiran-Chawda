@@ -1,9 +1,12 @@
 .mycard-wrapper{
-    min-width: 1510px;
+    /* min-width: 1510px; */
+    background-color: black;
+    padding: 20px 0;
   }
   .mycard-container{
     padding: 50px;
-    background-color: #f9f7f7;
+    /* background-color: #f9f7f7; */
+    background-color: black;
     margin-left: 300px;
     margin-right: 300px;
     border-radius: 50px;
@@ -19,19 +22,21 @@
     height: 350px;
     width: 480px;
     margin: 10px;
+    border-radius:20px;
 
   }
   .img-small{
     height: 350px;
     width: 300px;
-    margin: 10px;
-
+    margin: 5px;
+    border-radius: 20px ;
   }
   .event-title h1{
     margin: 10px;
     margin-top:13px ;
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
+    color: white;
   
   }
   .event-title span{
@@ -42,24 +47,24 @@
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    border: 1px solid white;
   }
   .event-title h3{
     margin: 18px;
     font-weight: 100;
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+    font-size: 15px;
   }
   .event-details p{
     margin: 10px;
     font-weight: 100;
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
-    
+    color: white;
   }
   
   .custom-dot-list-style li {
-    margin: 0 5px;
-    cursor: pointer;
+   display: none;
   }
   
   
@@ -84,16 +89,16 @@
     .img-big {
       margin: 5px auto; /* Center the image horizontally */
       height: 180px;
-      width: 250px;
+      width: 290px;
       display: block; /* Ensure it takes full width available */
      
     }
     .img-small {
       margin: 5px auto; /* Center the image horizontally */
-      height: 200px;
+      height: 180px;
       width: 150px;
       display: block; /* Ensure it takes full width available */
-     padding-bottom: 10px;
+      padding-bottom: 0;
     }
     .event-title h1 {
       padding: 0 10px;
@@ -102,8 +107,12 @@
     }
     .event-title h3 {
       padding: 12px;
-      margin: 0;
-      font-size: 8px;
+      margin-top: 5px;
+      font-size: 12px;
+    }
+    .event-title span{
+      padding: 9px 15px;
+
     }
     .event-details p {
       padding: 10px;
@@ -116,4 +125,9 @@
       display: flex;
       flex-direction: column;
     }
+      
+  .custom-dot-list-style li {
+    margin: 15px 5px;
+    cursor: pointer;
+  }
   }

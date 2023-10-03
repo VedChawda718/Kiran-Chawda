@@ -6,6 +6,7 @@ import Api from "./Components/Api/Api"
 import Home from "./Components/Home/Home"
 import Footer from "./Components/Footer/Footer"
 import ImageCarousel from "./Components/ImageCarousel/ImageCarousel";
+import logo from "./assets/logo.png"
 
 
 function App() {
@@ -42,17 +43,19 @@ function App() {
   <>
   <div className="main-container">
   <header id="home">
+  <img className="responsive" src={logo} alt="" />
      <nav ref={navRef}>
         <ul >
-            <li ><a  href="#home" onClick={showNavbar}><i class="fa-solid fa-house"></i></a></li>
+        <img className="non-responsive" src={logo} alt="" />
+            <li ><a  href="#home" onClick={showNavbar}>Home</a></li>
             <li ><a  href="#about" onClick={showNavbar}>About</a></li>
-            <li><a href="#cards"  onClick={() => { filterItem("Buy"); trueBuyOption(); }}>Buy</a></li>
+            {/* <li><a href="#cards"  onClick={() => { filterItem("Buy"); trueBuyOption(); }}>Buy</a></li> */}
             <li><a href="#cards"  onClick={() => {filterItem("Abstract") ; setShowHamburger(true)}}>Abstract</a></li>
             <li><a href="#cards" onClick={() => {filterItem("Landscape") ; setShowHamburger(true)}}>Landscape</a></li>
             <li><a href="#cards" onClick={() =>{filterItem("Stained Glass") ; setShowHamburger(true)}}>Stained Glass</a></li>
             <li><a href="#cards" onClick={() => {filterItem("Sketches") ; setShowHamburger(true)}}>Sketches</a></li>
             <li><a href="#cards" onClick={() => {setMenuData(Api); showNavbar(); falseBuyOption();setShowHamburger(true) }}>All</a></li>
-            <li ><a  href="#contact" onClick={showNavbar}><i class="fa-solid fa-link"></i></a></li>
+            <li ><a  href="#contact" onClick={showNavbar}>Contact</a></li>
             <button className="nav-btn nav-close-btn" onClick={() => {
               showNavbar()
               setShowHamburger(true)
@@ -60,7 +63,7 @@ function App() {
 
         </ul>
     </nav>
-
+   
     <button className={`${showHamburger ? 'nav-btn1' : 'active'}`} onClick={() => {
       showNavbar()
       setShowHamburger(false)
@@ -72,16 +75,11 @@ function App() {
   <Home />
   <br />
   <br />
-  <br  />
-  <hr  />
-  <br id="about"   />
   <br />
   <br />
+  <br />
+  <br  id="about"    />
   <ImageCarousel/>
-  <br />
-  <br />
-  <br />
-  <hr  />
   <br />
   <br />
   <br />

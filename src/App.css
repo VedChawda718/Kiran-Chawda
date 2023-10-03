@@ -21,25 +21,27 @@ hr{
 
 header ul{
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  align-items: center;
   list-style: none;
-  padding: 20px;
+  padding: 10px 10px;
 }
-
+.main-container header .non-responsive{
+  position: absolute;
+  left: 30px;
+  height: 30px;
+  top: 20px;
+}
 header ul li a{
   text-decoration: none;
-  padding: 40px;
-  padding-bottom: 20px;
+  padding: 0 30px;
   color: black;
   font-size: 16px;
   font-weight: 450;
-  border-bottom: 2px solid white;
 }
 
 header ul li a:hover{
   color: rgb(108, 108, 108);
-  border-bottom: 2px solid rgb(108, 108, 108);
-  padding-bottom: 20px;
   transition: .1s;
 }
 .active{
@@ -48,24 +50,25 @@ header ul li a:hover{
 
 header .nav-btn{
   visibility: hidden;
+  z-index: 3000;
 }
 header .nav-btn1{
   visibility: hidden;
   z-index: 3000;
 }
 header .nav-btn1 i{
-  background-color: black;
-  color: white;
-  padding: 18px 20px;
+  padding: 10px 15px;
   border-radius: 50px;
-  font-size: 20px;
+  font-size: 30px;
+  /* color: rgb(80, 79, 79); */
+  background-color: white;
+  backdrop-filter: blur(20px);
 }
 header .nav-btn i{
-  background-color: black;
-  color: white;
-  padding: 18px 20px;
   border-radius: 50px;
-  font-size: 20px;
+  font-size: 30px;
+  padding: 10px;
+  color: white;
 }
 
 nav{
@@ -84,17 +87,24 @@ nav{
   header ul{
     flex-direction: column;
   }
-
+  header .nav-btn{
+    position: absolute;
+    right: 40px;   
+    top: 20px;
+  }
   header .nav-btn1{
     visibility: visible;
     background:transparent;
     border: none;
-    padding-top: 15px;
+    padding-top: 10px;
     font-size: 30px;
     padding-left: 20px;
     position: fixed;
-    
+    right: 20px;    
   }
+  header{
+  padding-bottom: 35px;
+}
   header .nav-btn1 i:hover{
     background: gray;
   }
@@ -124,20 +134,35 @@ nav{
   }
   header .responsive-nav{
     transform: none;
+    height: 100vh;
+    opacity: 1;
+    background-color: black;
+    z-index: 3000;
   }
   header ul{
     text-align: center;
+    align-items: center;
+    margin-top: 25%;
   }
   header li {
-    padding: 10px;
+    padding: 15px;
   }
   header ul li a{
     padding: 0;
     font-size: 20px;
     font-weight: 2500;
+    color: white;
   }
   header ul li a:hover{
     border: none;
   }
-
+  .main-container header img{
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 25px 10px;
+    padding-left: 20px;
+   
+  }
 }

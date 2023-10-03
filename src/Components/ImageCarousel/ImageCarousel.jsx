@@ -56,7 +56,7 @@ const ImageCarousel = () => {
   
 
     return (
-        <Carousel responsive={responsive}  renderButtonGroupOutside={true} showDots={true}  autoPlay={true} autoPlaySpeed={10000}  keyBoardControl={true} dotListClass="custom-dot-list-style "   infinite={true} containerClass="carousel-container" itemClass="carousel-item-padding-40-px"  >
+        <Carousel responsive={responsive} showDots={true}  autoPlay={true} autoPlaySpeed={10000}  keyBoardControl={true} dotListClass="custom-dot-list-style "   infinite={true} containerClass="carousel-container" itemClass="carousel-item-padding-40-px"  >
            <div className="mycard-wrapper" >
         <div className="mycard-container" >
             <div className="img-box">
@@ -99,7 +99,7 @@ const ImageCarousel = () => {
            <h1>First National Level Art Competition & Exhibition</h1>
        </div>
        <div className="event-details">
-           <p>The ArtWork was recognized with a merit award in the first national-level art competition organized by Kala Sangati. </p>
+           <p>The ArtWork was recognized with a merit award in the first national-level art competition organized by Kala Sangati and the Artwork was exhibited in <b>Jodhpur</b> <b>Goa,Panji</b> <b>Jaipur</b></p>
        </div>
    </div>
 </div>
@@ -160,7 +160,7 @@ const ImageCarousel = () => {
                 <h1>Live-Demo at Camlin, India</h1>
             </div>
             <div className="event-details">
-                <p> Live demonstration sponsored by <b>Camlin.</b></p>
+                <p> Live demonstration sponsored by <b>Camlin.</b> teaching the students  of Lalit Kala Vibhag</p>
             </div>
         </div>
     </div>
@@ -183,8 +183,6 @@ const ImageCarousel = () => {
             </div>
         </div>
     </div>
-
-          
             </Carousel>
     )
 }
