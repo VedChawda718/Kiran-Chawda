@@ -115,7 +115,7 @@ const ImageCarousel = () => {
             </div>
             <div className="event-title">
                 <h3><span>2008</span></h3>
-                <h1>Gifted The Sketch To Master</h1>
+                <h1>Gifted The Sketch To Master in Chennai,India</h1>
             </div>
             <div className="event-details">
                 <p>Gifted the sketch of <b>Babuji Maharaj</b> to Master through Jimit Thakkar</p>
@@ -157,7 +157,7 @@ const ImageCarousel = () => {
             </div>
             <div className="event-title">
                 <h3><span>2016</span></h3>
-                <h1>Live-Demo at Camlin, India</h1>
+                <h1>Live-Demonstration at Camlin, India to the students of Lalit Kala Vibhag</h1>
             </div>
             <div className="event-details">
                 <p> Live demonstration sponsored by <b>Camlin.</b> teaching the students  of Lalit Kala Vibhag</p>
