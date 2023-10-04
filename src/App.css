@@ -71,6 +71,7 @@ header .nav-btn i{
   color: white;
 }
 
+
 nav{
   background: white; 
   width: 100%;
@@ -106,10 +107,10 @@ nav{
   padding-bottom: 35px;
 }
   header .nav-btn1 i:hover{
-    background: gray;
+    color: gray;
   }
   header .nav-btn i:hover{
-    background: gray;
+    color: gray;
   }
   header ul button{
     padding-bottom: 0px;
