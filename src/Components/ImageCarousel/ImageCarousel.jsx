@@ -7,6 +7,8 @@ import Small from "../../assets/images1/S-IMG1.jpg"
 import Big from "../../assets/images1/B-IMG1.jpg"
 import Small2 from "../../assets/images1/S-IMG2.jpg"
 import Big2 from "../../assets/images1/B-IMG2.jpg"
+import Big2a from "../../assets/images1/B-IMG2-a.jpg"
+import Big2b from "../../assets/images1/B-IMG2-b.jpg"
 import Small3 from "../../assets/images1/S-IMG3.jpg"
 import Big3 from "../../assets/images1/B-IMG3.jpg"
 import Big3a from "../../assets/images1/B-IMG3-a.jpg"
@@ -91,7 +93,11 @@ const ImageCarousel = () => {
     <div className="mycard-wrapper" >
    <div className="mycard-container" >
        <div className="img-box">
+       <Carousel responsive={responsive}x autoPlay={true} autoPlaySpeed={1650}  keyBoardControl={true} dotListClass="custom-dot-list-style"   infinite={true}     >
+           <img className='img-big' src={Big2b} alt="" />
+           <img className='img-big' src={Big2a} alt="" />
            <img className='img-big' src={Big2} alt="" />
+       </Carousel>
            <img className='img-small'src={Small2} alt="" />
        </div>
        <div className="event-title">

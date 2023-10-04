@@ -7,6 +7,7 @@ import Home from "./Components/Home/Home"
 import Footer from "./Components/Footer/Footer"
 import ImageCarousel from "./Components/ImageCarousel/ImageCarousel";
 import logo from "./assets/logo.png"
+import Poem from "./Components/Poem/Poem"
 
 
 function App() {
@@ -84,6 +85,15 @@ function App() {
   <br />
   <br />
   <Card  props={menuData}  showBuyOption={showBuyOption}/>
+  <hr />
+  <br />
+  <br />
+  <br />
+  <Poem/>
+  <br />
+  <br />
+  <br />
+  <hr />
   <br />
   <br />
   <br />
