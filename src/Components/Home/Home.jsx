@@ -3,6 +3,7 @@ import KiranChawda from "../../assets/Kiran Chawda1.jpg"
 import "./Home.css"
 import  Portfolio from "../../assets/PortFolio4.pdf";
 import Typed from 'typed.js';
+import Brush from '../../assets/artist-brush.png'
 const Home = () => {
   useEffect(() => {
     const typed = new Typed(".text-light", {
@@ -22,6 +23,9 @@ const Home = () => {
   return (
     <>
     <div className="about-container"> 
+    <div className="back-img">
+      <img src={Brush} alt="" />
+    </div>
     <div className="details-wrapper">
     <div className="image-container">
             <img src={KiranChawda} alt="" />

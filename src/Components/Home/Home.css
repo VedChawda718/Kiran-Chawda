@@ -3,7 +3,17 @@
     display: flex;
     justify-content: center;
     text-align: center;
-   
+}
+.back-img{
+   position: absolute;
+   left: 0;
+   transform: translateX(-10vh);
+}
+.back-img img{
+    position:absolute;
+    left: 0;
+    transform: rotate(-35deg);
+    height: 400px;
 }
 .image-container img{
  height: 280px;
@@ -91,5 +101,8 @@
         padding: 20px;
         padding-left: 30px;
         padding-right: 30px;
+    }
+    .back-img{
+        display: none;
     }
 }

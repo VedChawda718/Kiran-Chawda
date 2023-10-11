@@ -87,6 +87,7 @@ nav{
 
   header ul{
     flex-direction: column;
+   
   }
   header .nav-btn{
     position: absolute;
