@@ -6,7 +6,7 @@ const Footer = () => {
     <div id='contact'className="footer-wrapper">
     <div className="footer-container1">
     <div className="link-name">
-       <h1>Kiran Chawda</h1>
+       <h1><b>K</b>IRAN <b>C</b>HAWDA<b>.</b></h1>
        <a href="https://maps.app.goo.gl/m1yborHB6eWeyirA7"><i class="fa-solid fa-location-dot"></i>Dev Glass, Nagpur, Maharashtra, India.</a>
      </div>
       <hr className="responsive-hr" />

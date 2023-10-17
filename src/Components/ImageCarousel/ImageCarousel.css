@@ -3,11 +3,15 @@
     /* min-width: 1510px; */
     background-color: black;
     padding: 20px 0;
+    border-radius:  0 2000px 5000px 0;
+  }
+  .mycard-wrapper:hover{
+    opacity: 0.8;
   }
   .mycard-container{
     padding: 50px;
     /* background-color: #f9f7f7; */
-    background-color: black;
+    /* background-color: black; */
     margin-left: 300px;
     margin-right: 300px;
     border-radius: 50px;
@@ -73,10 +77,11 @@
   /* ==================SMALL DEVICES================= */
   @media screen and (max-width: 600px){
     .mycard-wrapper {
-      padding: 30px;
+      padding: 20px;
       margin-right: 0;
       margin-left: 0;
       min-width: 300px;
+      border-radius: 40px 40px 0px 0px;
     }
     .mycard-container {
       width: 300px;

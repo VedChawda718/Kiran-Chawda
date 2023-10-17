@@ -58,7 +58,8 @@ const ImageCarousel = () => {
   
 
     return (
-        <Carousel responsive={responsive} showDots={true}  autoPlay={true} autoPlaySpeed={10000}  keyBoardControl={true} dotListClass="custom-dot-list-style "   infinite={true} containerClass="carousel-container" itemClass="carousel-item-padding-40-px"  >
+        <Carousel   responsive={responsive} showDots={true}  autoPlay={true} autoPlaySpeed={10000}  keyBoardControl={true} dotListClass="custom-dot-list-style "   infinite={true} containerClass="carousel-container" itemClass="carousel-item-padding-40-px"  >
+           <div  id="about" data-aos={window.innerWidth > 600 ? "flip-left" : ""} data-aos-duration='1000'>
            <div className="mycard-wrapper" >
         <div className="mycard-container" >
             <div className="img-box">
@@ -74,6 +75,8 @@ const ImageCarousel = () => {
             </div>
         </div>
     </div>
+    </div>
+    <div  data-aos={window.innerWidth > 600 ? "flip-left" : ""} data-aos-duration='1000'>
     <div className="mycard-wrapper" >
     
         <div className="mycard-container" >
@@ -90,6 +93,8 @@ const ImageCarousel = () => {
             </div>
         </div>
     </div>
+    </div>
+    <div  data-aos={window.innerWidth > 600 ? "flip-left" : ""} data-aos-duration='1000'>
     <div className="mycard-wrapper" >
    <div className="mycard-container" >
        <div className="img-box">
@@ -109,6 +114,8 @@ const ImageCarousel = () => {
        </div>
    </div>
 </div>
+</div>
+<div  data-aos={window.innerWidth > 600 ? "flip-left" : ""} data-aos-duration='1000'>
 <div className="mycard-wrapper" >
         <div className="mycard-container" >
             <div className="img-box">
@@ -128,6 +135,8 @@ const ImageCarousel = () => {
             </div>
         </div>
     </div>
+    </div>
+    <div  data-aos={window.innerWidth > 600 ? "flip-left" : ""} data-aos-duration='1000'>
     <div className="mycard-wrapper" >
         <div className="mycard-container" >
             <div className="img-box">
@@ -149,17 +158,19 @@ const ImageCarousel = () => {
             </div>
         </div>
     </div>
+    </div>
+    <div  data-aos={window.innerWidth > 600 ? "flip-left" : ""} data-aos-duration='1000'>
     <div className="mycard-wrapper" >
         <div className="mycard-container" >
             <div className="img-box">
             <Carousel responsive={responsive}x autoPlay={true} autoPlaySpeed={1650}  keyBoardControl={true} dotListClass="custom-dot-list-style"   infinite={true}   >
                 <img className='img-big' src={Big3} alt="" />
                 <img className='img-big' src={Big3a} alt="" />
-                <img className='img-big' src={Big3b} alt="" />
+                {/* <img className='img-big' src={Big3b} alt="" />
                 <img className='img-big' src={Big3c} alt="" />
-                <img className='img-big' src={Big3d} alt="" />
+                <img className='img-big' src={Big3d} alt="" /> */}
                 </Carousel>
-                <img className='img-small'src={Small3} alt="" />
+                <img className='img-small' src={Small3} alt="" />
             </div>
             <div className="event-title">
                 <h3><span>2016</span></h3>
@@ -170,13 +181,15 @@ const ImageCarousel = () => {
             </div>
         </div>
     </div>
+    </div>
+    <div  data-aos={window.innerWidth > 600 ? "flip-left" : ""} data-aos-duration='1000'>
     <div className="mycard-wrapper" >
         <div className="mycard-container" >
         <div className="img-box">
         <Carousel responsive={responsive}x autoPlay={true} autoPlaySpeed={1650}  keyBoardControl={true} dotListClass="custom-dot-list-style"   infinite={true}   >
                 <img className='img-big' src={Big6} alt="" />
                 <img className='img-big' src={Big6a} alt="" />
-                <img className='img-big' src={Big6b} alt="" />
+                {/* <img className='img-big' src={Big6b} alt="" /> */}
                 </Carousel>
                 <img  className='img-small'src={Small6} alt="" />
                 </div>
@@ -188,6 +201,7 @@ const ImageCarousel = () => {
                 <p>It took 22 days to build the huge Amblem of 6 feet diameter, <b>Leaded Stained-Glass</b> at <b>Kanha Shanti Vanam</b>, Hyderabad.</p>
             </div>
         </div>
+    </div>
     </div>
             </Carousel>
     )

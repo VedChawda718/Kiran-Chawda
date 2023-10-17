@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,100&family=Roboto:ital,wght@0,100;0,300;1,100&family=Titillium+Web:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+
 .about-container{
     display: flex;
     justify-content: center;
@@ -15,11 +17,24 @@
     transform: rotate(-35deg);
     height: 400px;
 }
+.back-img1{
+    position: absolute;
+    left: 0;
+    transform: translateX(-6vh);
+ }
+.back-img1 img{
+    position:absolute;
+    left: 0;
+    transform: rotate(55deg);
+    height: 300px;
+    top: 18vh;
+}
 .image-container img{
  height: 280px;
  width: 220px;
  border-radius: 25px;
  margin: 20px;
+ z-index: -10000;
 }
 
 .image-container h2{
@@ -42,12 +57,13 @@
 .description-container h1{
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    height: 40px;
 }
 
 .description-container a{
     text-decoration: none;
     background-color: black;
-    color: var(--white);
+    color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 200;
@@ -55,6 +71,7 @@
     padding: 25px;
     padding-left: 40px;
     padding-right: 40px;
+
 }
 .description-container a:hover{
     background-color: rgb(102, 102, 102);
@@ -88,11 +105,11 @@
         text-align: center;
     }
     .description-container p{
-       font-size: 12px;
-       margin: 15px;
+       font-size: 10px;
+       margin: 1px;
     }
     .description-container h1{
-        font-size: 20px;
+        font-size: 22px;
     }
     .description-container a{
         font-size: 13px;
@@ -101,8 +118,12 @@
         padding: 20px;
         padding-left: 30px;
         padding-right: 30px;
+        margin: 0;
     }
     .back-img{
+        display: none;
+    }
+    .back-img1{
         display: none;
     }
 }

@@ -4,9 +4,12 @@ import "./Poem.css"
 const Poem = () => {
   return (
     <>
+    <div>
     <div className='poem-container'>
          <h1>"Awakening Horizon"</h1>
-    <div id="poem">
+         <div >
+         </div>
+    <div id="poem" >
     <p>
           Where form is continuum of space,<br />
           where lines blur,<br />
@@ -23,6 +26,7 @@ const Poem = () => {
     </div>
     <p className="poet-name">- Vishwajeet Majhi</p>
     </div> 
+    </div>
     </>
   )
 }

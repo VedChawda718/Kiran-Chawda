@@ -5,7 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   scroll-behavior: smooth;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -13,8 +15,7 @@ code {
 }
 
 :root {
-  --bg-color-primary :  #CDC9C3;
-  --bg-color-secondary:  #555555;
-  --white : white;
-  --text-color : #9DB2BF;
+  --bg-color-primary : white;
+  --bg-color-secondary: black;
+  --background-rgb: 247,247,247;
 }

@@ -18,8 +18,11 @@
 
 .link-name h1{
     font-family: 'Poppins', sans-serif;
-    font-weight: 100; 
+    font-weight: 10; 
     font-size: 50px;
+}
+.link-name h1 b{
+    color: gray;
 }
 .link-name a{
     font-family: 'Poppins', sans-serif; 
@@ -132,7 +135,7 @@
 
     .link-name h1{
         font-size: 35px;
-        padding: none;   
+        padding: none;
     }
 
     .link-name a{

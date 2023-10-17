@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {useRef} from "react";
 import './App.css';
 import Card from "./Components/Paintings/Card"
@@ -8,12 +8,23 @@ import Footer from "./Components/Footer/Footer"
 import ImageCarousel from "./Components/ImageCarousel/ImageCarousel";
 import logo from "./assets/logo.png"
 import Poem from "./Components/Poem/Poem"
+import logo1 from "./assets/logo1.png"
 
 
 function App() {
   const [menuData, setMenuData] = useState(Api);
   const [showHamburger, setShowHamburger] = useState(true)
   const [showBuyOption, setShowBuyOption] = useState(false); 
+  const [isOpen, setIsOpen] = useState(true);
+
+  // useEffect(() => {
+  //   // Apply CSS to disable scrolling when the menu is open
+  //   if (!isOpen) {
+  //     document.body.style.overflow = 'hidden';
+  //   } else {
+  //     document.body.style.overflow = 'auto';
+  //   }
+  // }, [isOpen]);
 
   const filterItem = (category) => {
     const updatedList = Api.filter((curElem) => {
@@ -36,39 +47,39 @@ function App() {
 
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive-nav")
-    setShowHamburger(true);
   }
   return (
 
       
   <>
+
   <div className="main-container">
   <header id="home">
+ 
   <img className="responsive" src={logo} alt="" />
      <nav ref={navRef}>
+    
         <ul >
         <img className="non-responsive" src={logo} alt="" />
-            <li ><a  href="#home" onClick={showNavbar}>Home</a></li>
-            <li ><a  href="#about" onClick={showNavbar}>About</a></li>
-            {/* <li><a href="#cards"  onClick={() => { filterItem("Buy"); trueBuyOption(); }}>Buy</a></li> */}
-            <li><a href="#cards"  onClick={() => {filterItem("Abstract") ; setShowHamburger(true)}}>Abstract</a></li>
-            <li><a href="#cards" onClick={() => {filterItem("Landscape") ; setShowHamburger(true)}}>Landscape</a></li>
-            <li><a href="#cards" onClick={() =>{filterItem("Stained Glass") ; setShowHamburger(true)}}>Stained Glass</a></li>
-            <li><a href="#cards" onClick={() => {filterItem("Sketches") ; setShowHamburger(true)}}>Sketches</a></li>
-            <li><a href="#cards" onClick={() => {setMenuData(Api); showNavbar(); falseBuyOption();setShowHamburger(true) }}>All</a></li>
-            <li ><a  href="#contact" onClick={showNavbar}>Contact</a></li>
-            <button className="nav-btn nav-close-btn" onClick={() => {
-              showNavbar()
-              setShowHamburger(true)
-            }}><i class="fa-solid fa-angles-up"></i></button>
-
+            <img src={logo1} className={`${(isOpen && window.innerWidth >600) ? "not-visible": "logo-responsive"}`}  alt="" />
+            <li ><a href="#home" onClick={()=>{showNavbar(); setIsOpen(!isOpen)}}>HOME</a></li>
+            <li ><a href="#about" onClick= {()=>{showNavbar(); setIsOpen(!isOpen)}}>ABOUT</a></li>
+            <li><a href="#cards"  onClick={() => { filterItem("Buy"); trueBuyOption();setIsOpen(!isOpen) }}>BUY</a></li>
+            <li><a href="#cards"  onClick={() => {filterItem("Abstract") ; setIsOpen(!isOpen)}}>ABSTRACT</a></li>
+            <li><a href="#cards" onClick={() => {filterItem("Landscape") ; setIsOpen(!isOpen)}}>LANDSCAPE</a></li>
+            <li><a href="#cards" onClick={() =>{filterItem("Stained Glass") ; setIsOpen(!isOpen)}}>STAINED GLASS</a></li>
+            <li><a href="#cards" onClick={() => {filterItem("Sketches") ; setIsOpen(!isOpen)}}>SKETCHES</a></li>
+            <li><a href="#cards" onClick={() => {setMenuData(Api); showNavbar(); falseBuyOption(); setIsOpen(!isOpen) }}>ALL</a></li>
+            <li ><a  href="#contact" onClick={()=> {showNavbar(); setIsOpen(!isOpen)}}>CONTACT</a></li>
+            <p className={`${window.innerWidth > 600 ? "not-visible" : "visible"}`}>&copy; Designed by <a href="https://www.instagram.com/vedchawda.718/"><b>Ved Chawda</b></a></p>
         </ul>
     </nav>
-   
-    <button className={`${showHamburger ? 'nav-btn1' : 'active'}`} onClick={() => {
-      showNavbar()
-      setShowHamburger(false)
-      }}><i class="fa-solid fa-bars"></i></button>
+    <div className="nav-button">
+    <div className={`${isOpen ? 'menu-button' : 'menu-button-open'   }`} onClick={()=> {setIsOpen(!isOpen); showNavbar()}}>
+             <div className="menu-button-burger">
+             </div>
+    </div>    
+    </div>
     </header>
   <br />
   <br />
@@ -78,13 +89,11 @@ function App() {
   <br />
   <br />
   <br />
-  <br />
-  <br  id="about"    />
   <ImageCarousel/>
   <br />
   <br />
   <br />
-  <Card  props={menuData}  showBuyOption={showBuyOption}/>
+  <Card  props={menuData}  showBuyOption={showBuyOption}  />
   <hr />
   <br />
   <br />
