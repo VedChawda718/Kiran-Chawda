@@ -2,7 +2,6 @@ import React from 'react';
 import "./ImageCarousel.css"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-
 import Small from "../../assets/images1/S-IMG1.jpg"
 import Big from "../../assets/images1/B-IMG1.jpg"
 import Small2 from "../../assets/images1/S-IMG2.jpg"
