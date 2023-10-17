@@ -60,7 +60,7 @@ function App() {
     
         <ul >
         <img className="non-responsive" src={logo} alt="" />
-            <img src={logo1} className={`${(isOpen && window.innerWidth >600) ? "not-visible": "logo-responsive"}`}  alt="" />
+            {/* <img src={logo1} className={`${(isOpen && window.innerWidth >600) ? "not-visible": "logo-responsive"}`}  alt="" /> */}
             <li ><a href="#home" onClick={()=>{showNavbar(); setIsOpen(!isOpen)}}>HOME</a></li>
             <li ><a href="#about" onClick= {()=>{showNavbar(); setIsOpen(!isOpen)}}>ABOUT</a></li>
             <li><a href="#cards"  onClick={() => { filterItem("Buy"); trueBuyOption();setIsOpen(!isOpen) }}>BUY</a></li>
