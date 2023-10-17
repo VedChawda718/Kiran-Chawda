@@ -11,6 +11,7 @@ import Poem from "./Components/Poem/Poem"
 import logo1 from "./assets/logo1.png"
 
 
+
 function App() {
   const [menuData, setMenuData] = useState(Api);
   const [showBuyOption, setShowBuyOption] = useState(false); 
@@ -58,7 +59,7 @@ function App() {
   <img className="responsive" src={logo} alt="" />
      <nav ref={navRef}>
     
-        <ul >
+        <ul className="nav-links">
         <img className="non-responsive" src={logo} alt="" />
             {/* <img src={logo1} className={`${(isOpen && window.innerWidth >600) ? "not-visible": "logo-responsive"}`}  alt="" /> */}
             <li ><a href="#home" onClick={()=>{showNavbar(); setIsOpen(!isOpen)}}>HOME</a></li>
@@ -91,7 +92,7 @@ function App() {
   <ImageCarousel/>
   <br />
   <br />
-  <br />
+  <br id="cards"/>
   <Card  props={menuData}  showBuyOption={showBuyOption}  />
   <hr />
   <br />

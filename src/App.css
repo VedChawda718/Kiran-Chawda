@@ -60,7 +60,6 @@ header .nav-btn1 i{
   padding: 10px 15px;
   border-radius: 50px;
   font-size: 30px;
-  /* color: rgb(80, 79, 79); */
   background-color: white;
   backdrop-filter: blur(20px);
 }
@@ -71,12 +70,11 @@ header .nav-btn i{
   color: white;
 }
 
-nav{
+.main-container header nav{
   background: white; 
   width: 100%;
-  /* opacity: 0.9; */
   position: fixed;
-  top: 0; /* Stick the navbar to the top of the viewport */
+  top: 0; 
   z-index: 100;
 }
 .not-visible{
@@ -140,7 +138,7 @@ nav{
     height: 100vh;
     opacity: 1;
     background-color: black;
-    z-index: 3000;
+    z-index: 4000;
   }
   header ul{
     text-align: left;
@@ -153,7 +151,7 @@ nav{
     margin-top: 15px ;
     font-weight: 100;
   }
-  header ul p a{
+  header .nav-links p a{
     color: white;
     text-decoration: none;
     font-size: 15px;
@@ -162,11 +160,11 @@ nav{
   header li {
     padding: 15px;
   }
-  header ul li a{
+  header .nav-links li a{
     padding: 0;
     font-size: 18px;
     font-weight: 100;
-    color: white;
+    color: black;
     font-family: 'Poppins';
   }
   header ul li a:hover{
@@ -244,6 +242,12 @@ nav{
 .logo-responsive{
   text-align: center;
   height: 40px;
+}
+.visible{
+  color: black;
+}
+.visible a b{
+  color: black;
 }
 }
 
