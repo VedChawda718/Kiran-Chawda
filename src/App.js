@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import {useRef} from "react";
 import './App.css';
 import Card from "./Components/Paintings/Card"
@@ -13,7 +13,6 @@ import logo1 from "./assets/logo1.png"
 
 function App() {
   const [menuData, setMenuData] = useState(Api);
-  const [showHamburger, setShowHamburger] = useState(true)
   const [showBuyOption, setShowBuyOption] = useState(false); 
   const [isOpen, setIsOpen] = useState(true);
 
