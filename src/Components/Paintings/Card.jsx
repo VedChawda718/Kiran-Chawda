@@ -13,8 +13,8 @@ const Card = ({ props, showBuyOption }) => {
       <div className='cardWrapper'>
         {props.map((currElem) => {
           return (
-           
-            <div className="card-container" key={currElem.id}  data-aos={window.innerWidth > 600 ? "zoom-in" : ""}>
+           <div data-aos={window.innerWidth > 600 ? "zoom-in" : ""}>
+            <div className="card-container" key={currElem.id}  >
               <div className="img-container">
                 <a href={currElem.image}><img src={currElem.image} alt="" /></a>
                 <br />
@@ -30,10 +30,11 @@ const Card = ({ props, showBuyOption }) => {
                 )}
               </div>
             </div>
-          
+            </div>
           )
         })}
       </div>
+       
     </>
   )
 }

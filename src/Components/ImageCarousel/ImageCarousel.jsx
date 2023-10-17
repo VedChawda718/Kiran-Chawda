@@ -161,7 +161,7 @@ const ImageCarousel = () => {
     <div className="mycard-wrapper" >
         <div className="mycard-container" >
             <div className="img-box">
-            <Carousel responsive={responsive}x autoPlay={true} autoPlaySpeed={1650}  keyBoardControl={true} dotListClass="custom-dot-list-style"   infinite={true}   >
+            <Carousel responsive={responsive}x autoPlay={true} autoPlaySpeed={1650}  keyBoardControl={true} dotListClass="custom-dot-list-style" containerClass="carousel-container"  infinite={true}   >
                 <img className='img-big' src={Big3} alt="" />
                 <img className='img-big' src={Big3a} alt="" />
                 {/* <img className='img-big' src={Big3b} alt="" />
