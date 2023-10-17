@@ -2,6 +2,8 @@ import React from 'react';
 import "./ImageCarousel.css"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import AOS from 'aos';
+import '../../../node_modules/aos/dist/aos'; // This is for the CSS file
 import Small from "../../assets/images1/S-IMG1.jpg"
 import Big from "../../assets/images1/B-IMG1.jpg"
 import Small2 from "../../assets/images1/S-IMG2.jpg"
@@ -26,6 +28,7 @@ import Small7 from "../../assets/images1/S-IMG7.jpg"
 import Big7 from "../../assets/images1/B-IMG7.jpg"
 import Big7a from "../../assets/images1/B-IMG7-a.jpg"
 import Big7b from "../../assets/images1/B-IMG7-b.jpg"
+AOS.init();
 
 
 const ImageCarousel = () => {

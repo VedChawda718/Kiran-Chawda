@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Card.css";
 import AOS from 'aos';
-
+import 'aos/dist/aos.css'; // This is for the CSS file
 
 AOS.init();
 
