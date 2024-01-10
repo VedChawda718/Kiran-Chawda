@@ -73,7 +73,7 @@ import Card from "./Components/Paintings/Card";
 import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import ImageCarousel from "./Components/ImageCarousel/ImageCarousel";
-import logo from "./assets/logo.png";
+// import logo from "./assets/logo.png";
 import Poem from "./Components/Poem/Poem";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignupForm from "./Components/SignupForm/SignupForm";

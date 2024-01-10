@@ -57,7 +57,7 @@ const ImageCarousel = () => {
 
     return (
         <Carousel   responsive={responsive} showDots={true}  autoPlay={true} autoPlaySpeed={10000}  keyBoardControl={true} dotListClass="custom-dot-list-style "   infinite={true} containerClass="carousel-container" itemClass="carousel-item-padding-40-px"  >
-           <div  id="about" data-aos={window.innerWidth > 600 ? "flip-left" : ""} data-aos-duration='1000'>
+           <div  id="about" data-aos={window.innerWidth > 600 ? "fade-right" : ""} data-aos-duration='5000'>
            <div className="mycard-wrapper" >
         <div className="mycard-container" >
             <div className="img-box">
@@ -74,7 +74,7 @@ const ImageCarousel = () => {
         </div>
     </div>
     </div>
-    <div  data-aos={window.innerWidth > 600 ? "flip-left" : ""} data-aos-duration='1000'>
+    <div  data-aos={window.innerWidth > 600 ? "fade-right" : ""} data-aos-duration='1000'>
     <div className="mycard-wrapper" >
     
         <div className="mycard-container" >
@@ -92,7 +92,7 @@ const ImageCarousel = () => {
         </div>
     </div>
     </div>
-    <div  data-aos={window.innerWidth > 600 ? "flip-left" : ""} data-aos-duration='1000'>
+    <div  data-aos={window.innerWidth > 600 ? "fade-right" : ""} data-aos-duration='1000'>
     <div className="mycard-wrapper" >
    <div className="mycard-container" >
        <div className="img-box">
@@ -113,7 +113,7 @@ const ImageCarousel = () => {
    </div>
 </div>
 </div>
-<div  data-aos={window.innerWidth > 600 ? "flip-left" : ""} data-aos-duration='1000'>
+<div  data-aos={window.innerWidth > 600 ? "fade-right" : ""} data-aos-duration='1000'>
 <div className="mycard-wrapper" >
         <div className="mycard-container" >
             <div className="img-box">
@@ -134,7 +134,7 @@ const ImageCarousel = () => {
         </div>
     </div>
     </div>
-    <div  data-aos={window.innerWidth > 600 ? "flip-left" : ""} data-aos-duration='1000'>
+    <div  data-aos={window.innerWidth > 600 ? "fade-right" : ""} data-aos-duration='1000'>
     <div className="mycard-wrapper" >
         <div className="mycard-container" >
             <div className="img-box">
@@ -157,7 +157,7 @@ const ImageCarousel = () => {
         </div>
     </div>
     </div>
-    <div  data-aos={window.innerWidth > 600 ? "flip-left" : ""} data-aos-duration='1000'>
+    <div  data-aos={window.innerWidth > 600 ? "fade-right" : ""} data-aos-duration='1000'>
     <div className="mycard-wrapper" >
         <div className="mycard-container" >
             <div className="img-box">
@@ -180,7 +180,7 @@ const ImageCarousel = () => {
         </div>
     </div>
     </div>
-    <div  data-aos={window.innerWidth > 600 ? "flip-left" : ""} data-aos-duration='1000'>
+    <div  data-aos={window.innerWidth > 600 ? "fade-right" : ""} data-aos-duration='1000'>
     <div className="mycard-wrapper" >
         <div className="mycard-container" >
         <div className="img-box">

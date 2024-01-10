@@ -50,7 +50,7 @@ const NavBar = ({ handleFilter }) => {
            <li><a href="#cards" onClick={() => {filterItem("Sketches") ; setIsOpen(!isOpen)}}>SKETCHES</a></li>
            {/* <li><a href="#cards" onClick={() => {filterItem("All"); showNavbar(); setIsOpen(!isOpen) }}>ALL</a></li> */}
            <li ><a  href="#contact" onClick={()=> {showNavbar(); setIsOpen(!isOpen)}}>CONTACT</a></li>
-           <li><Link to='/signup'>Sign Up</Link></li>
+           <li><Link to='/signup'><i class="fa-solid fa-user"></i></Link></li>
 
            <p className={`${window.innerWidth > 600 ? "not-visible" : "visible"}`}>&copy; Designed by <a href="https://www.instagram.com/vedchawda.718/"><b>Ved Chawda</b></a></p>
           </ul>
