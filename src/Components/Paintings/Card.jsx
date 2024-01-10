@@ -8,7 +8,7 @@ import { useSwipeable } from 'react-swipeable';
 AOS.init();
 
 const Card = ({ props, showBuyOption }) => {
-  const itemsPerPage = window.innerWidth > 600 ? 3 : 9; // Show 12 cards on larger screens, and 6 on mobile devices
+  const itemsPerPage = window.innerWidth > 600 ? 6 : 9; // Show 12 cards on larger screens, and 6 on mobile devices
   const [currentPage, setCurrentPage] = useState(1);
 
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -36,7 +36,7 @@ const Card = ({ props, showBuyOption }) => {
     <>
       <br />
       <br />
-      <br />
+      <br id="cards" />
      
       <Pagination
         count={Math.ceil(props.length / itemsPerPage)}
@@ -45,7 +45,7 @@ const Card = ({ props, showBuyOption }) => {
       />
     
           <div {...handlers}>
-      <div className="cardWrapper">
+      <div  className="cardWrapper">
         {currentItems.map((currElem) => {
           return (
             <div data-aos={window.innerWidth > 600 ? 'zoom-in' : ''} key={currElem.id}>

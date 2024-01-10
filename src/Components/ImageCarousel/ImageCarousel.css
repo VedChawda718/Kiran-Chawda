@@ -5,9 +5,7 @@
     padding: 20px 0;
     border-radius:  0 2000px 5000px 0;
   }
-  .mycard-wrapper:hover{
-    opacity: 0.8;
-  }
+
   .mycard-container{
     padding: 50px;
     /* background-color: #f9f7f7; */
@@ -71,7 +69,7 @@
   .custom-dot-list-style li {
    display: none;
   }
-  
+ 
   
   /* ==================SMALL DEVICES================= */
   @media screen and (max-width: 600px){
